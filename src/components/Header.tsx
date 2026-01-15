@@ -44,8 +44,10 @@ const Header = () => {
                 {link.name}
               </Link>
             ))}
-            <Button variant="outline" className="ml-4">
-              Join IEEE
+            <Button variant="outline" className="ml-4" asChild>
+              <a href="https://www.ieee.org" target="_blank" rel="noopener noreferrer">
+                Join IEEE
+              </a>
             </Button>
           </nav>
 
