@@ -8,6 +8,7 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "Executive Committee", path: "/executive-committee" },
   { name: "News", path: "/news" },
+  { name: "Events", path: "/events" },
 ];
 
 const Header = () => {

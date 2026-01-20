@@ -57,10 +57,10 @@ useEffect(() => {
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSlide}
-          initial={{ opacity: 0, scale: 1.1 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.8 }}
+          initial={{ opacity: 1, scale: 1.0 }}
+          animate={{ opacity: 1, scale: 1.1 }}
+          exit={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
           className="absolute inset-0"
         >
           <div
