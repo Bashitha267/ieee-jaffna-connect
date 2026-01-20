@@ -146,3 +146,48 @@ export const aboutText = {
   short: "The IEEE Student Branch of Jaffna is dedicated to fostering innovation and excellence in engineering and technology.",
   full: "Established with a vision to advance technological innovation and excellence for the benefit of humanity, the IEEE Student Branch of Jaffna serves as a vibrant community of aspiring engineers, researchers, and technology enthusiasts. We organize workshops, seminars, competitions, and networking events to help students develop their technical skills and connect with industry professionals."
 };
+
+export const events = [
+  {
+    id: 1,
+    title: "IEEE Xtreme 18.0",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop",
+    date: "2024-10-14",
+    location: "University of Jaffna"
+  },
+  {
+    id: 2,
+    title: "Techno 2024",
+    image: "https://images.unsplash.com/photo-1540575861501-7ad0582373f3?q=80&w=2070&auto=format&fit=crop",
+    date: "2024-11-20",
+    location: "Colombo"
+  },
+  {
+    id: 3,
+    title: "Machine Learning Workshop",
+    image: "https://images.unsplash.com/photo-1591453088816-d296714d8ac9?q=80&w=2070&auto=format&fit=crop",
+    date: "2024-12-05",
+    location: "IT Lab, UoJ"
+  },
+  {
+    id: 4,
+    title: "IEEE Day Celebrations",
+    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2070&auto=format&fit=crop",
+    date: "2024-10-01",
+    location: "Main Hall, UoJ"
+  },
+  {
+    id: 5,
+    title: "Web Development Bootcamp",
+    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop",
+    date: "2025-01-15",
+    location: "Online"
+  },
+  {
+    id: 6,
+    title: "Cyber Security Seminar",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop",
+    date: "2025-02-10",
+    location: "Auditorium"
+  }
+];
