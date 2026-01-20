@@ -34,19 +34,19 @@ const AboutSection = () => {
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               {aboutText.full}
             </p>
-            
-            <div className="grid grid-cols-2 gap-4">
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {features.map((feature, index) => (
                 <motion.div
                   key={feature.title}
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: index * 0.1 + 0.3, duration: 0.5 }}
-                  className="p-4 rounded-xl bg-card border border-border hover:shadow-lg transition-shadow"
+                  className="p-4 rounded-xl bg-card border border-border hover:shadow-lg transition-all"
                 >
-                  <feature.icon className="w-8 h-8 text-secondary mb-2" />
-                  <h3 className="font-semibold text-foreground">{feature.title}</h3>
-                  <p className="text-sm text-muted-foreground">{feature.description}</p>
+                  <feature.icon className="w-6 h-6 md:w-8 md:h-8 text-secondary mb-2" />
+                  <h3 className="font-semibold text-foreground text-sm md:text-base">{feature.title}</h3>
+                  <p className="text-xs md:text-sm text-muted-foreground">{feature.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -81,7 +81,7 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Decorative Elements */}
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-secondary/10 rounded-full blur-2xl" />
             <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />

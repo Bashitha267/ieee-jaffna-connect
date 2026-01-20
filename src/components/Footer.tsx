@@ -73,8 +73,8 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
-          <p>© 2024 IEEE Student Branch of Jaffna. All rights reserved.</p>
-          <p>Designed with ❤️ for IEEE</p>
+          <p>© 2026 IEEE Student Branch of Jaffna. All rights reserved.</p>
+          <p>Designed By Nimesh Bashitha</p>
         </div>
       </div>
     </footer>

@@ -2,7 +2,9 @@ export const GET_SLIDESHOW = `
   query GetSlides {
     ieeeSideshows {
       id
-      title: ieeeSideshowHeaderTitle
+      title: headertitle
+      uniname:universityname
+      tagline:tagline
       sideshowImages {
         url
       }

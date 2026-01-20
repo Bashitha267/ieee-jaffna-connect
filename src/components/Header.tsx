@@ -9,10 +9,9 @@ const navLinks = [
   { name: "Executive Committee", path: "/executive-committee" },
   { name: "News", path: "/news" },
   { name: "Events", path: "/events" },
-<<<<<<< HEAD
-=======
+
   { name: "News Letter", path: "/news-letter" },
->>>>>>> 23fe9b4942df2b7f43bd192953e40b8647e68499
+
 ];
 
 const Header = () => {
@@ -34,11 +33,10 @@ const Header = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
-                  location.pathname === link.path
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground hover:bg-muted"
-                }`}
+                className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${location.pathname === link.path
+                  ? "bg-primary text-primary-foreground"
+                  : "text-foreground hover:bg-muted"
+                  }`}
               >
                 {link.name}
               </Link>
@@ -75,11 +73,10 @@ const Header = () => {
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`px-4 py-3 rounded-lg font-medium transition-all ${
-                    location.pathname === link.path
-                      ? "bg-primary text-primary-foreground"
-                      : "text-foreground hover:bg-muted"
-                  }`}
+                  className={`px-4 py-3 rounded-lg font-medium transition-all ${location.pathname === link.path
+                    ? "bg-primary text-primary-foreground"
+                    : "text-foreground hover:bg-muted"
+                    }`}
                 >
                   {link.name}
                 </Link>
