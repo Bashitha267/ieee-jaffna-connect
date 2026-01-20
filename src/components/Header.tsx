@@ -9,6 +9,10 @@ const navLinks = [
   { name: "Executive Committee", path: "/executive-committee" },
   { name: "News", path: "/news" },
   { name: "Events", path: "/events" },
+<<<<<<< HEAD
+=======
+  { name: "News Letter", path: "/news-letter" },
+>>>>>>> 23fe9b4942df2b7f43bd192953e40b8647e68499
 ];
 
 const Header = () => {
@@ -21,13 +25,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20 px-4">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg md:text-xl">IE</span>
-            </div>
-            <div className="hidden sm:block">
-              <p className="font-display font-bold text-foreground text-sm md:text-base">IEEE Student Branch</p>
-              <p className="text-muted-foreground text-xs">University of Jaffna</p>
-            </div>
+            <img src="/logo.png" alt="IEEE Jaffna Logo" className="h-10 md:h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -45,8 +43,10 @@ const Header = () => {
                 {link.name}
               </Link>
             ))}
-            <Button variant="outline" className="ml-4">
-              Join IEEE
+            <Button variant="outline" className="ml-4" asChild>
+              <a href="https://www.ieee.org" target="_blank" rel="noopener noreferrer">
+                Join IEEE
+              </a>
             </Button>
           </nav>
 
