@@ -46,10 +46,10 @@ const News_section = () => {
     };
 
     return (
-        <section className="p-4 bg-white dark:bg-slate-950">
+        <section className="p-4 bg-white dark:bg-slate-950 ">
             <div className="container-wide">
-                <div className="flex flex-col items-center mb-16 text-center">
-                    <div className="text-center mb-8">
+                <div className="flex flex-col items-center mb-4 text-center">
+                    <div className="text-center mb-2 md:mt-20 mt-14">
                         <h2 className="font-display text-2xl md:text-3xl font-bold text-slate-900 dark:text-white uppercase tracking-wider">
                             News
                         </h2>
@@ -93,9 +93,9 @@ const News_section = () => {
                     ))}
                 </motion.div>
 
-                <div className="flex justify-center mt-16">
+                <div className="flex justify-center mt-16 ">
                     <Link to="/news">
-                        <Button className="group px-8 py-6 rounded-full text-lg font-semibold transition-all hover:px-10">
+                        <Button className="group px-8 py-6 rounded-full text-lg font-semibold transition-all hover:px-10 md:mb-20">
                             View More News
                             <ArrowRight size={20} className="ml-2 group-hover:translate-x-2 transition-transform" />
                         </Button>

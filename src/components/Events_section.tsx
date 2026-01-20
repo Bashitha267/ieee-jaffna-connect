@@ -47,7 +47,7 @@ const Events_section = () => {
     };
 
     return (
-        <section className="p-4 bg-white dark:bg-slate-950">
+        <section className="p-1 bg-white dark:bg-slate-950">
             <div className="container-wide">
                 <div className="flex flex-col items-center mb- text-center">
                     <div className="text-center mb-8">

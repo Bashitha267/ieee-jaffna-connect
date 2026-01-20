@@ -35,12 +35,17 @@ const Chapters = () => {
                             transition={{ duration: 0.5, delay: chapter.id * 0.1 }}
                             className="w-full md:w-auto flex items-center justify-center gap-1"
                         >
-                            <a href={chapter.link} target="_blank">
+                            <a
+                                href={chapter.link}
+                                target="_blank"
+                                className="group relative p-4 rounded-xl transition-all duration-500 hover:scale-125 "
+                            >
                                 <img
                                     src={chapter.logo}
                                     alt={chapter.name}
-                                    className={`mb-4 md:mb-0  md:h-64  opacity-100   transition-all duration-300 ${chapter.name === "CIS" ? "object-cover w-full h-44" : "object-contain  w-52 h-32"}`}
+                                    className={`mb-4 md:mb-0 md:h-64 opacity-100 transition-all duration-300  ${chapter.name === "CIS" ? "object-cover w-full h-44" : "object-contain w-52 h-32"}`}
                                 />
+                                <div className="absolute inset-0 rounded-xl transition-all duration-300"></div>
                             </a>
 
 
