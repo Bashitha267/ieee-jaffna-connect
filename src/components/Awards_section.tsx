@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
-import { ArrowRight, Trophy, User } from "lucide-react";
+import { ArrowRight, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { hygraph } from "@/lib/hygraph";
@@ -101,18 +101,18 @@ const Awards_section = () => {
                       </div>
 
                       {/* Card Content Area */}
-                      <div className="p-6">
-                        {/* 2. Title */}
-                        <h3 className="text-lg md:text-xl font-bold font-display text-slate-900 dark:text-white leading-snug group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2 mb-4">
+                      <div className="p-5 md:p-6 space-y-2">
+                        {/* Title */}
+                        <h3 className="text-base md:text-lg font-bold font-display text-slate-900 dark:text-white leading-snug group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                           {item.title}
                         </h3>
 
-                        {/* 3. Received By */}
+                        {/* Received By (Grey color theme) */}
                         {item.recievedby && (
-                          <div className="flex items-center gap-2.5 text-sm text-slate-700 dark:text-slate-300 font-medium bg-slate-100/90 dark:bg-slate-900 px-3.5 py-2.5 rounded-xl border border-slate-200/70 dark:border-slate-800">
-                            <User size={16} className="text-blue-600 dark:text-blue-400 shrink-0" />
-                            <span className="truncate">Received by: {item.recievedby}</span>
-                          </div>
+                          <p className="text-sm text-slate-500 dark:text-slate-400">
+                            <span className="font-medium">Received by: </span>
+                            <span className="font-semibold text-slate-700 dark:text-slate-200">{item.recievedby}</span>
+                          </p>
                         )}
                       </div>
                     </div>

@@ -14,7 +14,7 @@ export const GET_SLIDESHOW = `
 
 export const GET_EVENTS = `
   query GetEvents {
-    events {
+    events(orderBy: createdAt_DESC) {
       id
       title
       description
@@ -47,7 +47,7 @@ export const GET_STAFF = `
 
 export const GET_NEWS = `
   query GetNews {
-    newsmodels {
+    newsmodels(orderBy: createdAt_DESC) {
       id
       newheader
       newsDescription
@@ -62,7 +62,7 @@ export const GET_NEWS = `
 
 export const GET_NEWSLETTERS = `
   query GetNewsletters {
-    newsletters {
+    newsletters(orderBy: createdAt_DESC) {
       id
       title
       coverpage {
@@ -77,7 +77,7 @@ export const GET_NEWSLETTERS = `
 
 export const GET_AWARDS = `
   query GetAwards {
-    awardsbySB {
+    awardsbySB(orderBy: createdAt_DESC) {
       id
       title
       date
@@ -89,4 +89,3 @@ export const GET_AWARDS = `
     }
   }
 `;
-

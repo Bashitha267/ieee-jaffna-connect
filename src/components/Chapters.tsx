@@ -12,12 +12,16 @@ const chapters = [
         id: 6, name: "PES", logo: "https://res.cloudinary.com/dnfbik3if/image/upload/v1768919839/pes_vp54yu.png",
         link: "https://www.eng.jfn.ac.lk/ieee-pes/"
     },
+    {
+        id: 7, name: "EDS", logo: "https://res.cloudinary.com/dnfbik3if/image/upload/v1785385453/EDS_1_2_2_rwytcd.png",
+        link: "#"
+    },
 ];
 
 const Chapters = () => {
     return (
         <section className="py-16 bg-white dark:bg-slate-950">
-            <div className=" md:px-16">
+            <div className="px-4 md:px-12">
                 <div className="text-center mb-8">
                     <h2 className="font-display text-2xl md:text-3xl font-bold text-slate-900 dark:text-white uppercase tracking-wider">
                         Our Chapters and Affinity Groups
@@ -25,30 +29,29 @@ const Chapters = () => {
                     <div className="w-32 mx-auto border-b-4 border-blue-700 mt-1"></div>
                 </div>
 
-                <div className="flex flex-col md:flex-row items-center justify-between gap-1 md:gap-6">
+                <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
                     {chapters.map((chapter) => (
                         <motion.div
                             key={chapter.id}
                             initial={{ opacity: 0, scale: 0.9 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: chapter.id * 0.1 }}
-                            className="w-full md:w-auto flex items-center justify-center gap-1"
+                            transition={{ duration: 0.5, delay: chapter.id * 0.08 }}
+                            className="flex items-center justify-center"
                         >
                             <a
                                 href={chapter.link}
                                 target="_blank"
-                                className="group relative p-4 rounded-xl transition-all duration-500 hover:scale-125 "
+                                rel="noopener noreferrer"
+                                className="group relative p-2 md:p-4 rounded-xl transition-all duration-300 hover:scale-110"
                             >
                                 <img
                                     src={chapter.logo}
                                     alt={chapter.name}
-                                    className={`mb-4 md:mb-0 md:h-64 opacity-100 transition-all duration-300  ${chapter.name === "CIS" ? "object-cover w-full h-44" : "object-contain w-52 h-32"}`}
+                                    className={`opacity-100 transition-all duration-300 ${chapter.name === "CIS" ? "object-cover w-40 md:w-48 h-32 md:h-44" : "object-contain w-36 md:w-44 h-24 md:h-32"}`}
                                 />
                                 <div className="absolute inset-0 rounded-xl transition-all duration-300"></div>
                             </a>
-
-
                         </motion.div>
                     ))}
                 </div>
