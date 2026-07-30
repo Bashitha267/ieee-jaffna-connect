@@ -6,10 +6,10 @@ const chapters = [
     { id: 1, name: "CIS", logo: "https://res.cloudinary.com/dnfbik3if/image/upload/v1768919094/cis_b_bg_rmo94v.png", link: "https://society.jfn.ac.lk/cis/" },
     { id: 2, name: "WIE", logo: "https://res.cloudinary.com/dnfbik3if/image/upload/v1768919316/IEEE_WIE_SBAG_Logo_d35vc6.png", link: "https://sites.google.com/univ.jfn.ac.lk/wie-uoj/home" },
     { id: 3, name: "CS", logo: "https://res.cloudinary.com/dnfbik3if/image/upload/v1768919407/csblack_kayl0w.png", link: "https://www.linkedin.com/company/ieeecsuoj/" },
-    { id: 4, name: "ComSoc", logo: "https://res.cloudinary.com/dnfbik3if/image/upload/v1768919731/Untitled_design_cftouc.png", link: "https://web.facebook.com/ieeecomsocsbcuoj/" },
-    { id: 5, name: "RAS", logo: "https://res.cloudinary.com/dnfbik3if/image/upload/v1768919780/ras_b3cbgr.png", link: "https://www.linkedin.com/company/ieeerasuoj/" },
+    { id: 4, name: "ComSoc", logo: "https://res.cloudinary.com/dnfbik3if/image/upload/v1785386100/new_comsoc_pr4ohr.png", link: "https://web.facebook.com/ieeecomsocsbcuoj/" },
+    { id: 5, name: "RAS", logo: "https://res.cloudinary.com/dnfbik3if/image/upload/v1785386100/ras_new_huwwmh.png" },
     {
-        id: 6, name: "PES", logo: "https://res.cloudinary.com/dnfbik3if/image/upload/v1768919839/pes_vp54yu.png",
+        id: 6, name: "PES", logo: "https://res.cloudinary.com/dnfbik3if/image/upload/v1785386100/pes_new_odaslc.png",
         link: "https://www.eng.jfn.ac.lk/ieee-pes/"
     },
     {
