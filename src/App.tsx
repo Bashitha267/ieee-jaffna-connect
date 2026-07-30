@@ -11,6 +11,7 @@ import Events from "./pages/Events";
 import EventDetails from "./pages/EventDetails";
 import NewsDetails from "./pages/News_details";
 import NewsLetter from "./pages/NewsLetter";
+import Awards from "./pages/Awards";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/executive-committee" element={<ExecutiveCommittee />} />
           <Route path="/news" element={<News />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/awards" element={<Awards />} />
           <Route path="/event-details" element={<EventDetails />} />
           <Route path="/news-details" element={<NewsDetails />} />
           <Route path="/news-letter" element={<NewsLetter />} />

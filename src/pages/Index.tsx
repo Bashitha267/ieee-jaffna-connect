@@ -5,6 +5,7 @@ import Vision from "@/components/Vision";
 import Chapters from "@/components/Chapters";
 import Events_section from "@/components/Events_section";
 import News_section from "@/components/News_section";
+import Awards_section from "@/components/Awards_section";
 import StatsSection from "@/components/StatsSection";
 import AboutSection from "@/components/AboutSection";
 import { hygraph } from "@/lib/hygraph";
@@ -22,6 +23,7 @@ const Index = () => {
         <Chapters />
         <Events_section />
         <News_section />
+        <Awards_section />
 
         {/* <StatsSection /> */}
 

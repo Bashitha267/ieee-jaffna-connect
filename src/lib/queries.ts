@@ -74,3 +74,19 @@ export const GET_NEWSLETTERS = `
     }
   }
 `;
+
+export const GET_AWARDS = `
+  query GetAwards {
+    awardsbySB {
+      id
+      title
+      date
+      description
+      recievedby
+      mainimage {
+        url
+      }
+    }
+  }
+`;
+

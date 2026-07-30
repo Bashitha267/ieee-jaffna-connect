@@ -6,13 +6,11 @@ import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { name: "Home", path: "/" },
-
   { name: "News", path: "/news" },
-
   { name: "Events", path: "/events" },
+  { name: "Awards", path: "/awards" },
   { name: "Executive Committee", path: "/executive-committee" },
   { name: "News Letter", path: "/news-letter" },
-
 ];
 
 const Header = () => {
